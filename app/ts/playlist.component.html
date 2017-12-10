@@ -1,1 +1,18 @@
-<h2>My playlist will load here</h2>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Title</td>
+      <td>Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- loop through all the videos and create for each a new table row -->
+    <tr *ngFor="#v of videos">
+      <td>{{v.id}}</td>
+      <td>{{v.title}}</td>
+      <td>{{v.desc}}</td>
+    </tr>
+  </tbody>
+
+</table>
