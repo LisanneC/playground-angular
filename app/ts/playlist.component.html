@@ -7,8 +7,9 @@
     </tr>
   </thead>
   <tbody>
-    <!-- loop through all the videos and create for each a new table row -->
-    <tr *ngFor="#v of videos">
+    <!-- ngFor = loop through all the videos and create for each a new table row -->
+    <!-- (click) click event -->
+    <tr *ngFor="#v of videos" (click)="onSelect(v)">
       <td>{{v.id}}</td>
       <td>{{v.title}}</td>
       <td>{{v.desc}}</td>
